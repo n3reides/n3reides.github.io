@@ -91,6 +91,9 @@
   #weather-table tr td {
     font-size: 22px;
   }
+  .weather-module section td .wind-info .wind-dir-arrow {
+    width: 22px;
+  }
 
   .weather-module section ul li button {
     font-size: 20px;
