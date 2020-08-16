@@ -7,7 +7,6 @@ class WeatherInfo {
   }
 }
 export function getWeatherInfoArray(data, lang) {
-  console.log(lang);
   let finalArray = [];
   data.forEach(function (series) {
     let params = series.parameters;
