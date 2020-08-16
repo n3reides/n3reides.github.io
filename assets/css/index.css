@@ -189,8 +189,11 @@
     border-style: none;
   }
   main section p {
+    margin-left: 17%;
+    margin-right: 17%;
+    max-width: 66%;
     font-size: 24px;
-    text-align: justify;
+    text-align: left;
     padding: 40px;
   }
 
@@ -211,9 +214,10 @@
     margin: 40px;
   }
   main article p {
+    max-width: 66%;
     font-size: 24px;
     text-align: left;
-    margin: 40px;
+    padding: 40px;
   }
   main article ul li {
     margin: 80px;
@@ -221,7 +225,6 @@
   }
 
   main article figure img {
-    margin-top: 20px;
     height: 60%;
     width: 100%;
   }
@@ -349,6 +352,7 @@
     background-color: #5eb2f2;
   }
   header figure img {
+    height: 400px;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -358,23 +362,109 @@
     margin-left: 15%;
     margin-right: 15%;
   }
+  header nav ul li a {
+    font-size: 20px;
+    padding: 20px 10px;
+  }
   header section .info-english {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
   }
+  header section .info-english li a {
+    font-size: 20px;
+    padding: 20px 10px;
+  }
+  .info-english a .flag-icon-gb {
+    width: 25px;
+    height: 25px;
+  }
   body {
-    background-color: #9bcef5;
+    background-color: #f3f8fe;
   }
   main {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
   }
+  main h2 {
+    max-width: 100%;
+    font-size: 28px;
+    padding: 2% 2%;
+    width: 96%;
+  }
+  main section p {
+    font-size: 18px;
+  }
+  main article p {
+    font-size: 18px;
+  }
+  main article ul li {
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
   main article form {
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+  }
+  main article form select {
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+  }
+  main article form fieldset {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 20px;
+  }
+  main article form fieldset input {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #checkBtn {
+    font-size: 20px;
+    width: 40%;
+    height: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  #heading,
+  #myName,
+  #myEmail,
+  #myNumber {
+    height: 30px;
+    font-size: 18px;
+  }
+  #mittMeddelande {
+    font-size: 18px;
+    height: 100px;
+  }
+  main article form label {
+    font-size: 18px;
+  }
+  main article figure img {
+    height: 400px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  main article table {
+    margin-top: 0.5em;
+  }
+  main article tr th {
+    font-size: 20px;
+  }
+  main article tr td {
+    font-size: 18px;
+  }
+  main article figure figcaption {
+    font-size: 20px;
   }
   form fieldset > {
     font-size: 30px;
@@ -391,16 +481,12 @@
     background-color: #9bcef5;
   }
   footer section h3 {
-    font-size: 50px;
+    font-size: 20px;
     width: 70%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: center;
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }

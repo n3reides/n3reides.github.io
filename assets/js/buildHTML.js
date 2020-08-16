@@ -98,25 +98,13 @@ function buildTableDataRow(weather) {
 function createWindInfo(windDir, windStr) {
   let element = document.createElement("span");
   element.className = "wind-info";
-  element.appendChild(document.createTextNode(windStr));
-  if (windDir < 24 || windDir > 337) {
-    element.appendChild(document.createTextNode(" - N"));
-  } else if (windDir < 69 && windDir > 23) {
-    element.appendChild(document.createTextNode(" - NE"));
-  } else if (windDir < 114 && windDir > 68) {
-    element.appendChild(document.createTextNode(" - E"));
-  } else if (windDir < 159 && windDir > 113) {
-    element.appendChild(document.createTextNode(" - SE"));
-  } else if (windDir < 204 && windDir > 158) {
-    element.appendChild(document.createTextNode(" - S"));
-  } else if (windDir < 249 && windDir > 203) {
-    element.appendChild(document.createTextNode(" - SW"));
-  } else if (windDir < 294 && windDir > 248) {
-    element.appendChild(document.createTextNode(" - W"));
-  } else {
-    element.appendChild(document.createTextNode(" - NW"));
-  }
-  console.log(element);
+  element.appendChild(document.createTextNode(`${windStr} `));
+  let arrow = document.createElement("img");
+  arrow.src =
+    "https://png2.cleanpng.com/sh/2a67a295dc72defa667be5a9a8b68727/L0KzQYm3V8A3N5D2iZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfFzepD8ReVEbXLyfH73hvVqdF46eqVvNkG3corpg8MyOV85SqIDNEG0R4K8U8A5QGE4S6MBM0ixgLBu/kisspng-computer-icons-arrow-symbol-pfeil-5b3f614b9bc311.420841171530880331638.png";
+  arrow.className = "wind-dir-arrow";
+  arrow.style.transform = `rotate(${-90 + windDir}deg)`;
+  element.appendChild(arrow);
 
   return element;
 }

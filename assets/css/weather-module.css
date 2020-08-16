@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
-@media only screen and (min-width: 992px) {
-  .weather-module section h3 {
-    font-size: 40px;
-  }
-}
 @media only screen and (min-width: 600px) {
   .weather-module section {
     font-family: "Open Sans", sans-serif;
@@ -72,5 +67,32 @@
     color: rgb(82, 82, 82);
     font-size: 36px;
     padding: 10px;
+  }
+  .weather-module section td .wind-info .wind-dir-arrow {
+    width: 35px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .weather-module section h2 {
+    max-width: 100%;
+    font-size: 20px;
+    width: 96%;
+    padding: 2% 2%;
+  }
+  .weather-module section h3 {
+    font-size: 20px;
+    width: 96%;
+    padding: 2% 2%;
+  }
+  #weather-table tr th {
+    font-size: 20px;
+  }
+  #weather-table tr td {
+    font-size: 22px;
+  }
+
+  .weather-module section ul li button {
+    font-size: 20px;
   }
 }
