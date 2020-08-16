@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body header {
+    font-family: "Oswald", sans-serif;
+  }
+  header section .page-title {
+    background-color: #fffaf3;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    justify-content: center;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 1px solid;
+    border-color: rgb(82, 82, 82);
+  }
+  header section .page-title h1 {
+    text-align: center;
+    word-spacing: 30px;
+    font-size: 70px;
+  }
+  header figure img {
+    width: 100%;
+    height: 40%;
+  }
+
+  header nav ul {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    background-color: #ffd49a;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(82, 82, 82);
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(82, 82, 82);
+  }
+  header nav ul li:first-child {
+    border-left: none;
+  }
+  header nav ul li:nth-child(3) {
+    border-left: none;
+  }
+  header nav ul .nav-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    justify-self: stretch;
+    justify-items: center;
+  }
+  header nav ul .nav-2 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    justify-self: stretch;
+  }
+  header nav ul .nav-3 {
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: stretch;
+  }
+  header nav ul .nav-4 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    justify-self: stretch;
+  }
+  header nav ul li a {
+    height: 44%;
+    padding: 60px 40px;
+    font-size: 50px;
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+  }
+  header nav ul li a:hover {
+    cursor: pointer;
+    background-color: #fffaf3;
+  }
+  header nav ul li a:focus {
+    background-color: #fffaf3;
+  }
+
+  header section .info-english {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-wrap: normal;
+    border-style: solid;
+    border-width: 0px 0px 10px 0px;
+    border-color: #ff9200;
+    background-color: #ffb758;
+  }
+  header section .info-english li a {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    word-spacing: 10px;
+    font-size: 60px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+  }
+  header section .info-english li a:hover {
+    cursor: pointer;
+    background-color: #fffaf3;
+  }
+
+  header section .info-english li a:focus {
+    background-color: #fffaf3;
+  }
+  .info-english a .flag-icon-gb {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background-image: url(../gb-eng.svg);
+  }
+  body main {
+    font-family: "Open-Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  body footer {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  #info-wrapper section:nth-child(1) figure img {
+    width: 100%;
+    height: 40%;
+  }
+  #info-wrapper section:nth-child(2) figure img {
+    width: 100%;
+    height: 40%;
+  }
+  main a {
+    color: rgb(82, 82, 82);
+  }
+  main a:hover {
+    cursor: pointer;
+  }
+  main h2 {
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+    border-color: #3f301d;
+    background-color: #ffd49a;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: center;
+  }
+
+  main section {
+    background-color: #fffaf3;
+    border-style: solid;
+    border-color: #ffd49a;
+    border-width: 0px 0px 5px 0px;
+  }
+  main div section:last-child {
+    border-style: none;
+  }
+  main section p {
+    font-size: 24px;
+    text-align: justify;
+    padding: 40px;
+  }
+
+  main article {
+    background-color: #fffaf3;
+    border-style: solid;
+    border-color: #ffd49a;
+    border-width: 0px 0px 5px 0px;
+  }
+  main article h3 {
+    padding: 40px;
+    padding-bottom: 20px;
+    font-size: 2em;
+  }
+  main article .news-date {
+    font-weight: bold;
+    text-decoration-line: underline;
+    margin: 40px;
+  }
+  main article p {
+    font-size: 24px;
+    text-align: left;
+    margin: 40px;
+  }
+  main article ul li {
+    margin: 80px;
+    list-style-type: circle;
+  }
+
+  main article figure img {
+    margin-top: 20px;
+    height: 60%;
+    width: 100%;
+  }
+  main article figure figcaption {
+    font-style: italic;
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+  }
+  main article form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  main article form fieldset input:focus,
+  textarea:focus {
+    background: #fffaf3;
+    border-radius: 5px;
+  }
+  main article form fieldset {
+    font-size: 36px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 1em;
+    border: 1px outset;
+    border-color: rgb(82, 82, 82);
+  }
+  main article form fieldset textarea {
+    margin-top: 20px;
+    font-size: 40px;
+    height: 300px;
+    width: 100%;
+  }
+  main article form fieldset input {
+    font-size: 40px;
+    width: 100px;
+    margin: 20px;
+    height: 50px;
+  }
+  #heading {
+    margin-left: 0;
+  }
+  #heading,
+  #myName,
+  #myEmail,
+  #myNumber {
+    padding: 0;
+    width: 100%;
+  }
+  main article form button {
+    background-color: #ff9200;
+    color: #ffffff;
+    font-size: 50px;
+    height: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    margin-bottom: 5%;
+  }
+  main article form select {
+    font-size: 40px;
+    height: 100px;
+    width: 500px;
+  }
+  main article form select option {
+    font-size: 15px;
+    max-height: 0.4em;
+  }
+  main article table {
+    border-bottom: 1px solid;
+    border-color: rgb(82, 82, 82);
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  main article table th {
+    background-color: rgb(82, 82, 82);
+    font-size: 46px;
+    padding: 10px;
+    color: #ffffff;
+  }
+  main article table td {
+    background-color: #fffaf3;
+    color: rgb(82, 82, 82);
+    font-size: 42px;
+    padding: 14px;
+  }
+  #news-wrapper > article:nth-child(2) > figure > img {
+    max-height: 700px;
+  }
+  footer {
+    width: 100%;
+    background-color: #9bcef5;
+  }
+  footer section h3 {
+    font-size: 50px;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header figure {
+    background-color: #f3f8fe;
+  }
+  .navbar {
+    background-color: #9bcef5;
+  }
+  header section {
+    background-color: #5eb2f2;
+  }
+  header figure img {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  header nav ul {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  header section .info-english {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  body {
+    background-color: #9bcef5;
+  }
+  main {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  main article form {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  form fieldset > {
+    font-size: 30px;
+  }
+  main article table {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  footer {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #9bcef5;
+  }
+  footer section h3 {
+    font-size: 50px;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

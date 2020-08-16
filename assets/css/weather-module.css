@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+@media only screen and (min-width: 992px) {
+  .weather-module section h3 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .weather-module section {
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 130px;
+    background-color: #fffaf3;
+  }
+  .weather-module section h2 {
+    background-color: #fffaf3;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    border: 1px solid;
+    border-color: #ffb758;
+  }
+  .weather-module section h3 {
+    font-size: 40px;
+
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+    border-color: #ffb758;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .weather-module section ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    overflow: scroll;
+  }
+  .weather-module section ul li {
+    float: left;
+  }
+  .weather-module section ul li button {
+    background-color: #ffb758;
+    color: #000000;
+    text-align: center;
+    padding: 40px 60px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .weather-module section ul li button:focus {
+    background-color: #ffd49a;
+  }
+  .weather-module section ul li button:active {
+    background-color: #fffaf3;
+  }
+  .weather-module section table {
+    border-bottom: 1px solid;
+    border-color: rgb(82, 82, 82);
+    width: 100%;
+    text-align: center;
+  }
+  .weather-module section table th {
+    background-color: rgb(82, 82, 82);
+    font-size: 40px;
+    padding: 10px;
+    color: #ffffff;
+  }
+  .weather-module section td {
+    background-color: #fffaf3;
+    color: rgb(82, 82, 82);
+    font-size: 36px;
+    padding: 10px;
+  }
+}
