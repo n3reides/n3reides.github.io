@@ -200,14 +200,13 @@
     border-width: 0px 0px 5px 0px;
   }
   main article h3 {
-    padding: 40px;
-    padding-bottom: 20px;
+    padding: 20px;
     font-size: 2em;
   }
   main article .news-date {
     font-weight: bold;
     text-decoration-line: underline;
-    margin: 20px;
+    margin-left: 20px;
   }
   main article p {
     max-width: 66%;
@@ -221,7 +220,6 @@
   }
 
   main article figure img {
-    padding-top: 20px;
     height: 40%;
     width: 100%;
   }
@@ -387,6 +385,9 @@
     margin-left: 15%;
     margin-right: 15%;
   }
+  main article {
+    padding-bottom: 10px;
+  }
   main h2 {
     max-width: 100%;
     font-size: 28px;
@@ -397,6 +398,7 @@
     font-size: 18px;
   }
   main article p {
+    padding: 20px;
     font-size: 18px;
   }
   main article ul li {
@@ -449,10 +451,10 @@
     font-size: 18px;
   }
   main article figure img {
-    height: 400px;
-    max-width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    height: 300px;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   main article table {
     margin-top: 0.5em;
