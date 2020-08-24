@@ -1,181 +1,233 @@
 <!DOCTYPE html>
 
 <html lang="sv">
+  <head>
+    <title>Djupvik Hamn - Kontakt &amp; Medlemsinfo</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/index.css" />
+  </head>
 
-<head>
-  <title>Djupvik Hamn - Kontakt &amp; Medlemsinfo </title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="../../assets/css/reset.css" />
-  <link rel="stylesheet" href="../../assets/css/index.css" />
-</head>
+  <body>
+    <header>
+      <section>
+        <div class="page-title">
+          <h1>DJUPVIKS HAMN</h1>
+          <a href="#navbar"
+            ><img
+              class="hamburger-icon"
+              src="../../assets/img/hamburger-icon.png"
+              alt="Menyikon"
+              width="768"
+              height="768"
+          /></a>
+        </div>
+        <figure>
+          <img
+            src="../../assets/img/D-15.jpg"
+            width="1277"
+            height="848"
+            alt="Bild på livboj vid Djupvik strand"
+          />
+        </figure>
+        <nav class="navbar">
+          <ul class="nav-wrapper">
+            <li class="nav-1"><a href="../../index.html">Startsida</a></li>
+            <li class="nav-2">
+              <a href="../gastplatser-turistmal/gastplatser-turistmal.html"
+                >Gästplatser &amp; Turistmål</a
+              >
+            </li>
+            <li class="nav-3">
+              <a href="../kontakt-medlemsinfo/kontakt-medlemsinfo.html"
+                >Kontakt &amp; Medlemsinfo</a
+              >
+            </li>
+            <li class="nav-4">
+              <a href="../djupviks-historia/djupviks-historia.html"
+                >Djupviks historia</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-<body>
-  <header>
-    <section>
-      <div class="page-title">
-        <span>
-          <h1>KONTAKT &amp; MEDLEMSINFO</h1><a href="#navbar"><img class="hamburger-icon"
-              src="../../assets/img/hamburger-icon.png" /></a>
-        </span>
-      </div>
-      <figure>
-        <img src="../../assets/img/D-15.jpg" width="1277" height="848" alt="Bild på livboj vid Djupvik strand" />
-      </figure>
-      <nav class="navbar">
-        <ul class="nav-wrapper">
-          <li class="nav-1"><a href="../../index.html">Startsida</a></li>
-          <li class="nav-2">
-            <a href="../gastplatser-turistmal/gastplatser-turistmal.html">Gästplatser &amp; Turistmål</a>
-          </li>
-          <li class="nav-3">
-            <a href="../kontakt-medlemsinfo/kontakt-medlemsinfo.html">Kontakt &amp; Medlemsinfo</a>
-          </li>
-          <li class="nav-4">
-            <a href="../djupviks-historia/djupviks-historia.html">Djupviks historia</a>
+        <ul class="info-english">
+          <li>
+            <a href="../djupvik-en/djupvik-en.html">
+              <svg class="flag-icon-gb"></svg>
+              Information in English
+            </a>
           </li>
         </ul>
-      </nav>
+      </section>
+    </header>
 
-      <ul class="info-english">
-        <li>
-          <a href="../djupvik-en/djupvik-en.html">
-            <svg class="flag-icon-gb"></svg>
-            Information in English
-          </a>
-        </li>
-      </ul>
-    </section>
-  </header>
+    <main>
+      <!-- Vi tänker oss även ett formulär där användare kan skicka in frågor osv till oss. -->
+      <h2>Kontaktuppgifter</h2>
+      <article>
+        <h3 class="hidden">UI heading</h3>
+        <p>
+          Hamnfogde Bo Lautin, mobil 0707-920310 <br />
+          <br />Djupviks hamnförening <br />c/o Ekholm Eksta Hägur 170<br />
+          623 54 Klintehamn
+        </p>
+      </article>
+      <article>
+        <h3>Kontaktformulär</h3>
+        <form method="POST" action="../booking.php">
+          <fieldset id="form-field-1">
+            <legend>Beskriv ditt ärende:</legend>
+            <label for="heading"> Rubrik: </label>
+            <input
+              type="text"
+              name="heading"
+              id="heading"
+              required
+              placeholder="Rubrik för ärendet"
+            />
+            <label for="mittMeddelande"> Meddelande: </label><br />
+            <textarea
+              name="mittMeddelande"
+              id="mittMeddelande"
+              rows="6"
+              cols="40"
+              placeholder="Beskriv kortfattat vad du undrar över"
+            ></textarea>
+          </fieldset>
+          <fieldset id="form-field-2">
+            <legend>Vad ärendet handlar om:</legend>
+            <input
+              type="radio"
+              name="rad-io"
+              value="boat place"
+              id="boatplace"
+            />
+            <label for="boatplace">Båtplats</label>
+            <br />
+            <input
+              type="radio"
+              name="rad-io"
+              value="member info"
+              id="membership"
+            />
+            <label for="membership">Medlemskap</label>
+            <br />
+            <input type="radio" name="rad-io" value="other info" id="other" />
+            <label for="other">Övrigt</label>
+            <br />
+          </fieldset>
+          <fieldset id="form-field-3">
+            <legend>Hur du vill bli kontaktad:</legend>
+            <select name="contact-info">
+              <option value="email" selected>E-mail</option>
+              <option value="phone">Telefon</option>
+              <option value="3">Inte alls</option>
+            </select>
+          </fieldset>
+          <fieldset id="form-field-4">
+            <legend>Dina uppgifter:</legend>
+            <label for="myName"> Namn: </label>
+            <input
+              type="text"
+              name="myNamn"
+              id="myName"
+              required
+              placeholder="Förnamn och efternamn"
+            />
+            <br />
+            <label for="myEmail"> Email: </label>
+            <input
+              type="email"
+              name="myEmail"
+              id="myEmail"
+              required
+              pattern="\S+@\S+\.+\S"
+              placeholder="namn@adress.se"
+            />
+            <br />
+            <label for="myNumber"> Mobilnummer: </label>
+            <input
+              type="number"
+              name="myNumber"
+              id="myNumber"
+              required
+              placeholder="07X-XX XX XXX"
+            />
+            <br />
+          </fieldset>
+          <button type="submit" id="checkBtn">Skicka formulär</button>
+        </form>
 
-  <main>
-    <!-- Vi tänker oss även ett formulär där användare kan skicka in frågor osv till oss. -->
-    <h2>Kontaktuppgifter</h2>
-    <article>
-      <h3 class="hidden">UI heading</h3>
-      <p>
-        Hamnfogde Bo Lautin, mobil 0707-920310 <br /> <br />Djupviks hamnförening <br />c/o Ekholm
-        Eksta Hägur 170<br /> 623 54 Klintehamn
-      </p>
-    </article>
-    <article>
-      <h3>Kontaktformulär</h3>
-      <form method="POST" action="../booking.php">
-        <fieldset id="form-field-1">
-          <legend>Beskriv ditt ärende: </legend>
-          <label for="heading"> Rubrik: </label>
-          <input type="text" name="heading" id="heading" required placeholder="Rubrik för ärendet" />
-          <label for="mittMeddelande"> Meddelande: </label><br />
-          <textarea name="mittMeddelande" id="mittMeddelande" rows="6" cols="40"
-            placeholder="Beskriv kortfattat vad du undrar över"></textarea>
-        </fieldset>
-        <fieldset id="form-field-2">
-          <legend>Vad ärendet handlar om: </legend>
-          <input type="radio" name="rad-io" value="boat place" id="boatplace" />
-          <label for="boatplace">Båtplats</label>
-          <br />
-          <input type="radio" name="rad-io" value="member info" id="membership" />
-          <label for="membership">Medlemskap</label>
-          <br />
-          <input type="radio" name="rad-io" value="other info" id="other" />
-          <label for="other">Övrigt</label>
-          <br />
-        </fieldset>
-        <fieldset id="form-field-3">
-          <legend>Hur du vill bli kontaktad: </legend>
-          <select name="contact-info">
-            <option value="email" selected>E-mail</option>
-            <option value="phone">Telefon</option>
-            <option value="3">Inte alls</option>
-          </select>
-        </fieldset>
-        <fieldset id="form-field-4">
-          <legend>Dina uppgifter: </legend>
-          <label for="myName"> Namn: </label>
-          <input type="text" name="myNamn" id="myName" required placeholder="Förnamn och efternamn" />
-          <br />
-          <label for="myEmail"> Email: </label>
-          <input type="email" name="myEmail" id="myEmail" required pattern="\S+@\S+\.+\S"
-            placeholder="namn@adress.se" />
-          <br />
-          <label for="myNumber"> Mobilnummer: </label>
-          <input type="number" name="myNumber" id="myNumber" required placeholder="07X-XX XX XXX" />
-          <br />
-        </fieldset>
-        <button type="submit" id="checkBtn">Skicka formulär</button>
-      </form>
-
-      <!-- Rubrik för ärendet.
+        <!-- Rubrik för ärendet.
             - Beskrivning utav ärendet.
             - Val om vad det gäller (Båtplats, Medlem eller Övrigt).
             - Hur man vill bli kontaktad (mail, telefon eller inte alls)
             - Telefon
             - Mail -->
 
-      <!--             Tanken med en medlemssidan är att ni visar oss 
+        <!--             Tanken med en medlemssidan är att ni visar oss 
     hur den delen skulle kunna se ut. 
     Vi har information om aktuella händelser, 
     vad som är på gång, 
     kontaktuppgifter till styrelsen och protokollen från deras möten. 
  -->
 
-      <!-- Så denna sida vill vi se hur ni löser det med medlemslistan, 
+        <!-- Så denna sida vill vi se hur ni löser det med medlemslistan, 
 dessa namn är då inte riktiga personer. Vi vill ha det hela i en tabell.  -->
-    </article>
-    <article>
-      <h3>Medlemmar i Djupviksföreningen</h3>
-      <table>
-        <tr>
-          <th>Namn</th>
-          <th>E-mailadress</th>
-          <th>Telefonnummer</th>
-        </tr>
-        <tr>
-          <td>Erik Ekholm</td>
-          <td>erik@djupvik.se</td>
-          <td>070-123 45 67</td>
-        </tr>
-        <tr>
-          <td>Bo Lautin</td>
-          <td>bo@djupvik.se</td>
-          <td>071-234 56 78</td>
-        </tr>
-        <tr>
-          <td>Fredrik Bottarve</td>
-          <td>fredrik@djupvik.se</td>
-          <td>072-345 67 89</td>
-        </tr>
-        <tr>
-          <td>Christina Persson</td>
-          <td>christina@djupvik.se</td>
-          <td>073-456 78 90</td>
-        </tr>
-        <tr>
-          <td>Per-Erik Larsson</td>
-          <td>pere@djupvik.se</td>
-          <td>074-567 89 01</td>
-        </tr>
-        <tr>
-          <td>Maria Fagerström</td>
-          <td>maria@djupvik.se</td>
-          <td>075-678 90 12</td>
-        </tr>
-        <tr>
-          <td>Lars Bengtsson</td>
-          <td>lars@djupvik.se</td>
-          <td>076-789 01 23</td>
-        </tr>
-      </table>
-    </article>
-  </main>
+      </article>
+      <article>
+        <h3>Medlemmar i Djupviksföreningen</h3>
+        <table>
+          <tr>
+            <th>Namn</th>
+            <th>E-mailadress</th>
+            <th>Telefonnummer</th>
+          </tr>
+          <tr>
+            <td>Erik Ekholm</td>
+            <td>erik@djupvik.se</td>
+            <td>070-123 45 67</td>
+          </tr>
+          <tr>
+            <td>Bo Lautin</td>
+            <td>bo@djupvik.se</td>
+            <td>071-234 56 78</td>
+          </tr>
+          <tr>
+            <td>Fredrik Bottarve</td>
+            <td>fredrik@djupvik.se</td>
+            <td>072-345 67 89</td>
+          </tr>
+          <tr>
+            <td>Christina Persson</td>
+            <td>christina@djupvik.se</td>
+            <td>073-456 78 90</td>
+          </tr>
+          <tr>
+            <td>Per-Erik Larsson</td>
+            <td>pere@djupvik.se</td>
+            <td>074-567 89 01</td>
+          </tr>
+          <tr>
+            <td>Maria Fagerström</td>
+            <td>maria@djupvik.se</td>
+            <td>075-678 90 12</td>
+          </tr>
+          <tr>
+            <td>Lars Bengtsson</td>
+            <td>lars@djupvik.se</td>
+            <td>076-789 01 23</td>
+          </tr>
+        </table>
+      </article>
+    </main>
 
-  <footer>
-    <section>
-      <h3>&copy; Djupvikshamn.se
-
-      </h3>
-      <h3>info&#64;djupvikshamn.se</h3>
-    </section>
-  </footer>
-</body>
-
+    <footer>
+      <section>
+        <h3>&copy; Djupvikshamn.se</h3>
+        <h3>info&#64;djupvikshamn.se</h3>
+      </section>
+    </footer>
+  </body>
 </html>
